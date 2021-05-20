@@ -12,13 +12,13 @@ from PIL import Image
 
 
 # creating a image object
-im = Image.open(r"C:\WTF\Private\PythonScripts\ExcelFun\test.JPG")
+im = Image.open(r"C:\Program Files\test.JPG") #####<-CHANGE PATH #####
 im.mode #should be RGB
 px = im.convert('RGB').load()
 im_width, im_height = im.size #im.size gives length of width and height, so e.g. 0-9 is width 10
 
 #initiate Excel workbook
-workbook = xlsxwriter.Workbook(r"C:\WTF\Private\PythonScripts\ExcelFun\test.xlsx")
+workbook = xlsxwriter.Workbook(r"C:\Program Files\Intel\test.xlsx") ######<- CHANGE PATH ######
 worksheet = workbook.add_worksheet()
 
 
